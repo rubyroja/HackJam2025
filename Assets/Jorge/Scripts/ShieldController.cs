@@ -73,7 +73,7 @@ public class ShieldController : MonoBehaviour
         }
     }
 
-    private void EnemyCollision(int damage)
+    public void EnemyCollision(int damage)
     {
         shieldCharge -= damage;
         UpdateShieldSize();
@@ -83,8 +83,6 @@ public class ShieldController : MonoBehaviour
     {
         shieldCharge += resourceCharge;
         UpdateShieldSize();
-
-
     }
 
     private void UpdateShieldSize()
