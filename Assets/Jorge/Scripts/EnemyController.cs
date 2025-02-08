@@ -19,4 +19,7 @@ public class EnemyController : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    private void OnTriggerEnter(Collider other) {
+        
+    }
 }
